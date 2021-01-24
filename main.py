@@ -49,8 +49,7 @@ def summarise():
 
     analysis = TextBlob(article.text)
     sentiment.delete('1.0', "end")
-    sentiment.insert(
-        '1.0', f'Polarity: {analysis.polarity}, Sentiment: {"positive" if analysis.polarity > 0 else "negative" if analysis.polarity < 0 else "neutral"}')
+    sentiment.insert('1.0', f'Polarity: {analysis.polarity}, Sentiment: {"positive" if analysis.polarity > 0 else "negative" if analysis.polarity < 0 else "neutral"}')
 
     # Set state to disabled to disable user input
     title.config(state='disabled')
@@ -145,13 +144,12 @@ sentiment = tk.Text(root, height=1, width=100)
 sentiment.config(state='disabled', bg=fg_color)
 sentiment.pack()
 
+# Blank space for a better layout
 blank = tk.Label(root, bg=bg_color)
 blank.pack()
 
 # Button
-
-btn = tk.Button(root, text="Summarise",
-                command=summarise, relief='ridge', bg='#FFF', padx=3, pady=3)
+btn = tk.Button(root, text="Summarise", command=summarise, relief='ridge', bg='#FFF', padx=3, pady=3)
 btn.pack()
 
 root.mainloop()
