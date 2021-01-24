@@ -22,7 +22,7 @@ A news summary GUI application which provides the Title, Author, Summary and eve
 
 # How does it work?
 
-## It uses the Python libraries **NLTK** (Natural Language Toolkit) for the language processing, **TKinter** for the GUI,**TextBlob** for sentiment detection and **Newspaper3K** for scraping the relevant data from the news articles.
+ It uses the Python libraries **NLTK** (Natural Language Toolkit) for the language processing, **TKinter** for the GUI, **TextBlob** for sentiment detection and **Newspaper3K** for scraping the relevant data from the news articles.
 
 # Clone project
 
